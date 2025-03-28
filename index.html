@@ -1,0 +1,183 @@
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- org css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>MATSUO TAKUMI</title>
+</head>
+
+<body>
+    <header class="header">
+        <!--ロゴ-->
+        <div class="logo">
+            <a href="#">
+                <img src="/img/logo.svg" alt="MATSUO TAKUMIのロゴ">
+            </a>
+        </div>
+        <!--ハンバーガーボタン-->
+        <div id="btn" class="btn">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </div>
+        <!--ハンバーガーメニュー-->
+        <div class="menu" id="menu">
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#gallery">ギャラリー</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contact">お問い合わせ</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#sns">SNS</a>
+                    </li>
+                </ul>
+            </nav>
+        <!--閉じるボタン-->
+        <div class="btn btn--close" id="btn--close">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </div>
+        </div>
+        <!--モーダルウィンドウ-->
+        <div id="modal" class="modal"></div>
+
+    </header>
+
+    <main class="main">
+        <!--fv-->
+        <section class="fv">
+            <div class="fv__inner">
+                <div class="fv__img-wrapper">
+                    <picture>
+                        <source srcset="./img/ocean-sp.png" media="(max-width:600px)">
+                        <img src="img/ocean.png" alt="海" class="fv_img">
+                    </picture>
+                </div>
+                <div class="fv__text-wrapper">
+                    <h1>MATSUO TAKUMI</h1>
+                </div>
+            </div>
+        </section>
+        <!--ギャラリー-->
+        <section class="gallery">
+            <div class="gallery__inner">
+                <h2>ギャラリー</h2>
+                <div class="gallery__list">
+                    <div class="gallery__img">
+                        <picture>
+                            <source srcset="./img/scooter-sp.png" media="(max-width:767px)">
+                            <img src="/img/scooter.png" alt="スクーター">
+                        </picture>
+                    </div>
+                    <div class="gallery__img">
+                        <picture>
+                            <source srcset="./img/sunset-sp.png" media="(max-width:767px)">
+                            <img src="/img/sunset.png" alt="雲">
+                        </picture>
+                    </div>
+                    <div class="gallery__img">
+                        <picture>
+                            <source srcset="./img/cityspace-sp.png" media="(max-width:767px)">
+                            <img src="/img/cityspace.png" alt="家">
+                        </picture>
+                    </div>
+                    <div class="gallery__img">
+                        <picture>
+                            <source srcset="./img/beach-sp.png" media="(max-width:767px)">
+                            <img src="/img/beach.png" alt="海">
+                        </picture>
+                    </div>
+                    <div class="gallery__img">
+                        <picture>
+                            <source srcset="./img/backstreet-sp.png" media="(max-width:767px)">
+                            <img src="/img/backstreet.png" alt="洗濯">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--お問い合わせ-->
+        <section class="contact">
+            <div class="contact__inner">
+                <h2>お問い合わせ</h2>
+                <form action="#" class="form" method="post">
+                    <div class="form__inner">
+                        <div class="form__unit">
+                            <label for="name" class="form__label">お名前</label>
+                            <input type="text" class="form__text-field" id="name" placeholder="入力してください">
+                        </div>
+                        <div class="form__unit">
+                            <label for="name" class="form__label">ご用件</label>
+                            <div class="form__select-box-wrapper">
+                                <select name="select-box" class="form__select-box">
+                                    <option value>選択してください</option>
+                                    <option value="ご相談">ご相談</option>
+                                    <option value="お仕事のご依頼">お仕事のご依頼</option>
+                                    <option value="その他">その他</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__unit">
+                            <label for="mail" class="form__label">メールアドレス</label>
+                            <input type="email" class="form__mail" id="mail" placeholder="入力してください">
+                        </div>
+                        <div class="form__unit">
+                            <label for="content" class="form__label">お問い合わせ内容</label>
+                            <textarea class="form__textarea" id="content" placeholder="入力してください"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--SNS-->
+        <section class="sns">
+            <div class="sns__inner">
+                <h2>SNS</h2>
+            </div>
+            <ul class="sns__list">
+                <li class="sns__item">
+                    <a class="sns__link" href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li class="sns__item">
+                    <a class="sns__link" href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>facebook</span>
+                    </a>
+                </li>
+                <li class="sns__item">
+                    <a class="sns__link" href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>instagram</span>
+                    </a>
+                </li>
+                <li class="sns__item">
+                    <a class="sns__link" href="#">
+                        <i class="fa-brands fa-line"></i>
+                        <span>LINE</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p class="copyright">2022 ©︎ MATSUO TAKUMI All Rights Reserved.</p>
+    </footer>
+    <script src="./hamburger.js"></script>
+</body>
+
+</html>
